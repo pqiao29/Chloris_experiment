@@ -1,0 +1,6 @@
+This repository provides code for replicating simulation and data analysis figures in 
+"Bayesian inference for copy number intra-tumoral heterogeneity from single-cell RNA-sequencing data"
+
+- simulation 1 replicates Figure 2 (B, C): Clustering ARI compared with inferCNV, CN state accuracy
+
+- simulation 2 replicates Figure 3 (E, F, G): Comparison with HoneyBADGER and inferCNV in clustering ARI, CN state accuracy and K selection.

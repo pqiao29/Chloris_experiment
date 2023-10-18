@@ -1,0 +1,9 @@
+This code replicates Figure 3 E, F, G
+
+1.  mkdir log
+    mkdir result
+
+2. sh sbatch.sh
+
+3. source plot_result.R => result/clustering.png, CN_state_png, K_png
+
