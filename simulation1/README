@@ -5,14 +5,14 @@ This folder contains code to replicate Figure 2 (B, C).
 ### Content
 
 Main scripts
-- `get_sbatch.R`:
-- `run_sims.sh`: 
-- `main.R`:
+- `main.R`: the main R script to run simulation and generate results
+- `run_sims.sh`: a bash script to run `main.R`
+- `get_sbatch.R`: an R script to configure and generate `run_sims.sh`
 
-Utility scripts
-- `plot_result.R`:
-- `simulation.R`:
-- `util.R`:
+Helper scripts
+- `simulation.R`: contains the function to run the simulations and collect results
+- `plot_result.R`: contains the function to plot the results
+- `util.R`: contains utility functions
 
 
 ### Workflow
@@ -20,15 +20,15 @@ Utility scripts
 1. Change parameters in `get_sbatch.R`: 
     range of RDR variance (RDR_var), K (K_range), number of cores (ncores), number of simulations (nsims)
 
-2. In R, source `get_sbatch.R` to get `sbatch.sh`
+2. In R, source `get_sbatch.R` to get `run_sims.sh`
 
-3. In terminal, create directories for output.
+3. In terminal, create the `result` and `log` directories for output with:
     ```
     mkdir result
     mkdir log
     ```
 
-4. In terminal, run the simulation with `sh sbatch.sh`.
+4. In terminal, run the simulation with `sh run_sims.sh`.
 
 5. In R, source `plot_result.R` to get `States.png`, `Clusters.png`.
 

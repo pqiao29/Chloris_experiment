@@ -3,21 +3,34 @@
 This folder contains code to replicate Figure 3 E, F, G.
 
 
+
+
 ### Content
 
 Main scripts:
+- `main.R`: the main script to run simulation and generate results
+- `run_compare.sh`: a bash script to run `main.R`
+- `sbatch.sh`: a script to submit `run_compare.sh` to a Slurm cluster
 
 
 Helper scripts:
+- `HoneyBADGER.R` and `HoneyBADGER_functions.R`: contain the function to run HoneyBADGER
+- `infercnv_main.R`, `infercnv_clustering_randomtree.R`, `infercnv_emission_pars.R`, `infercnv_HMM.R` and `infercnv_utils.R`: contain the function to run InferCNV
+- `simulation.R`: contains the function to run the simulations and collect results
+- `plot_result.R`: contains the function to plot the results
+
 
 
 
 ### Workflow
 
-1.  mkdir log
+1.  In terminal, create the `result` and `log` directories for output with:
+    ```
+    mkdir log
     mkdir result
+    ```
 
-2. sh sbatch.sh
+2. In terminal, submit the job to a Slurm cluster with `sh sbatch.sh`.
 
-3. source plot_result.R => result/clustering.png, CN_state_png, K_png
+3. In R, source `plot_result.R` to get `result/clustering.png`, `result/CN_state.png` and `result/K.png`.
 
