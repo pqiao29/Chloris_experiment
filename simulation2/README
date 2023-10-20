@@ -1,4 +1,18 @@
-This code replicates Figure 3 E, F, G
+## README
+
+This folder contains code to replicate Figure 3 E, F, G.
+
+
+### Content
+
+Main scripts:
+
+
+Helper scripts:
+
+
+
+### Workflow
 
 1.  mkdir log
     mkdir result
