@@ -1,12 +1,34 @@
-1. Change parameters in get_sbatch.sh: 
+## README
+
+This folder contains code to replicate Figure 2 (B, C).
+
+### Content
+
+Main scripts
+- `main.R`: the main R script to run simulation and generate results
+- `run_sims.sh`: a bash script to run `main.R`
+- `get_sbatch.R`: an R script to configure and generate `run_sims.sh`
+
+Helper scripts
+- `simulation.R`: contains the function to run the simulations and collect results
+- `plot_result.R`: contains the function to plot the results
+- `util.R`: contains utility functions
+
+
+### Workflow
+
+1. Change parameters in `get_sbatch.R`: 
     range of RDR variance (RDR_var), K (K_range), number of cores (ncores), number of simulations (nsims)
 
-2. source get_sbatch.sh to get sbatch.sh
+2. In R, source `get_sbatch.R` to get `run_sims.sh`
 
-3. mkdir log
-   mkdir result
+3. In terminal, create the `result` and `log` directories for output with:
+    ```
+    mkdir result
+    mkdir log
+    ```
 
-3. sh sbatch.sh
+4. In terminal, run the simulation with `sh run_sims.sh`.
 
-4. source plot_result.R => States.png, Clusters.png
+5. In R, source `plot_result.R` to get `States.png`, `Clusters.png`.
 
