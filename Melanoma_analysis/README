@@ -1,0 +1,23 @@
+## README
+
+This folder contains code to replicate Figure 4, 5.
+
+### Content
+
+Main scripts
+- `run_Chloris.R`: the main R script to run Chloris model on melanoma data 
+- `plot_Melanoma_genes.R`: R script to summarise consistency with melanoma genes in existing literature. 
+- `get_sbatch.R`: an R script to configure and generate `run_sims.sh`
+
+Datasets
+- `M71.Rdata`: RDR and BAF 
+- `Melanoma_genes.xlsx`: Record of reported melanoma-related genes and supporting literature.
+
+### Workflow
+
+1. In R, source `run_Chloris.R` to get `Chloris_fullmode.rds` and `Chloris_fullmode.png` (Figure 4, left panel)
+   
+2. In R, source `plot_Melanoma_genes.R` to get `Melanoma_gene_count.pdf` (Figure 4, right panel)
+
+3. In R, source `DE.R`, then source `plot_DE.R` to get `Hallmark_toclone1.png` (Figure 5)
+
