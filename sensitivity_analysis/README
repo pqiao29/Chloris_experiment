@@ -1,0 +1,32 @@
+## README
+
+This folder contains code to replicate Figure S4.
+
+### Content
+
+Main scripts
+- `main.R`: the main R script to run simulation and generate results
+- `run_sims.sh`: a bash script to run `main.R`
+- `get_sbatch.R`: an R script to configure and generate `run_sims.sh`
+
+Helper scripts
+- `simulation.R`: contains the function to run the simulations and collect results
+- `summary.R`: contains the function to plot the results
+
+
+### Workflow
+
+1. Change parameters in `get_sbatch.R`: 
+    range of \omage and T.
+
+2. In R, source `get_sbatch.R` to get `run_sims.sh`
+
+3. In terminal, create the `result` and `log` directories for output with:
+    ```
+    mkdir result
+    mkdir log
+    ```
+
+4. In terminal, run the simulation with `sh run_sims.sh`.
+
+5. In R, set the value of t then source `summary.R` to get `T*.png`.

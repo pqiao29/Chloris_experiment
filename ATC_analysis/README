@@ -1,0 +1,26 @@
+## README
+
+This folder contains code to replicate Figure 5.
+
+### Content
+
+Main scripts
+- `run_BAF.R`: R script to obtain normal cell reference using BAF model.
+- `preprocess.R`: R script to preprocess raw gene count and calculate RDR. 
+- `run_Chloris.R`: R script to run Chloris model on ATC data and plot result. 
+
+Datasets
+- `ATC_BAF.Rdata`: alternative (B) and total count (D) of BAF
+- `ATC_RDR.Rdata`: RDR.
+
+### Workflow
+
+1. Source `run_BAF.R` to get `Chloris_BAFref.rds`, the reference (normal) cell group needed to obtain RDR. 
+   
+2. Source `preprocess.R` to get `ATC_RDR.rds`. 
+
+3. Source `run_Chloris.R` to get `Chloris_RDRmode.rds` and `Chloris_RDRmode.png`.
+
+   Source `run_inferCNV.R` to get `inferCNV.rds`.
+   
+   Source `run_Numbar.R` to get numbat result. 

@@ -1,6 +1,6 @@
 ## README
 
-This folder contains code to replicate Figure 4, 5.
+This folder contains code to replicate Figure 4 and Figure S7.
 
 ### Content
 
@@ -19,5 +19,5 @@ Datasets
    
 2. In R, source `plot_Melanoma_genes.R` to get `Melanoma_gene_count.pdf` (Figure 4, right panel)
 
-3. In R, source `DE.R`, then source `plot_DE.R` to get `Hallmark_toclone1.png` (Figure 5)
+3. In R, source `DE.R`, then source `plot_DE.R` to get `Hallmark_toclone1.png` (Figure S7)
 
