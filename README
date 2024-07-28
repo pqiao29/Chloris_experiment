@@ -4,3 +4,9 @@ This repository provides code for replicating simulation and data analysis figur
 - simulation 1 replicates Figure 2 (B, C): Clustering ARI compared with inferCNV, CN state accuracy
 
 - simulation 2 replicates Figure 3 (E, F, G): Comparison with HoneyBADGER and inferCNV in clustering ARI, CN state accuracy and K selection.
+
+- Melnoma_analysis replicates Figure 4 and S7. 
+
+- ATC_analysis replicates Figure 5.
+
+- sensitivity_analysis replicates Figure S4: Impact of parameter \omega and T on the selection of cluster number K.
